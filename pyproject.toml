@@ -1,0 +1,15 @@
+[project]
+name = "mcp-jsondiff-kel"
+version = "0.1.1"
+description = "Gives you the ability to compare the two json strings."
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "build>=1.2.2.post1",
+    "deepdiff>=8.5.0",
+    "fastmcp>=2.9.0",
+    "mcp[cli]>=1.9.4",
+    "twine>=6.1.0",
+]
+[project.scripts]
+mcp_jsondiff_kel = "mcp_jsondiff_kel:main"
