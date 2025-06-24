@@ -1,4 +1,4 @@
-from mcp.server.fastmcp.server import FastMCP  # 使用工具期望的路径
+from mcp.server.fastmcp import FastMCP  # 使用工具期望的路径
 from deepdiff import DeepDiff
 import json
 

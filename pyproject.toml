@@ -1,6 +1,6 @@
 [project]
 name = "mcp-jsondiff-kel"
-version = "0.1.1"
+version = "0.1.2"
 description = "Gives you the ability to compare the two json strings."
 readme = "README.md"
 requires-python = ">=3.13"
@@ -13,3 +13,7 @@ dependencies = [
 ]
 [project.scripts]
 mcp_jsondiff_kel = "mcp_jsondiff_kel:main"
+
+[build-system]
+requires = ["uv>=0.1.0"]
+build-backend = "uv"
