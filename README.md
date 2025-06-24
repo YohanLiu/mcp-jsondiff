@@ -4,14 +4,14 @@
 
 ## inspector
 ```
-npx @modelcontextprotocol/inspector uvx mcp_jsondiff_kel
+npx @modelcontextprotocol/inspector uvx mcp-jsondiff-kel
 ```
 
 ## MCP 服务器配置
 ```
 {
   "mcpServers": {
-    "mcp_jsondiff_kel": {
+    "mcp_jsondiff": {
         "command": "uvx",
         "args": [
           "mcp-jsondiff-kel@latest"
