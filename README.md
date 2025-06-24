@@ -1,4 +1,4 @@
-## 计算器 MCP
+## jsondiff MCP
 基于 Model Context Protocol (MCP) 的json对比工具
 
 
