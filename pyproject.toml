@@ -1,6 +1,6 @@
 [project]
 name = "mcp-jsondiff-kel"
-version = "0.1.4"
+version = "0.1.5"
 description = "Gives you the ability to compare the two json strings."
 readme = "README.md"
 authors = [
