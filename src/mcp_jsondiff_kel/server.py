@@ -7,12 +7,19 @@ mcp = FastMCP("JsonDiffService")
 
 # json对比工具
 @mcp.tool()
-def jsonDiff(expectKey: str, actualKey: str) -> dict:
-    """执行json字符串对比"""
+def jsonDiff(expectKey, actualKey) -> dict:
+    """执行json对比"""
     try:
-        expect_json = json.loads(expectKey)
+        if isinstance(expectKey, dict):
+            expect_json = expectKey
+        else:
+            expect_json = json.loads(expectKey)
 
-        actual_json = json.loads(actualKey)
+        if isinstance(actualKey, dict):
+            actual_json = actualKey
+        else:
+            actual_json = json.loads(actualKey)
+
 
         # 执行对比
         differences = DeepDiff(expect_json, actual_json, ignore_order=True)
